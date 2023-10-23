@@ -3,16 +3,28 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  background: black;
-  color: white;
   font-family: 'JetBrains Mono', monospace;
 }
 
-main {
+.content {
+  background: black;
+  color: white;
   height: 100vh;
+}
+
+header {
+  height: 50px;
+  text-align: right;
+}
+
+.theme-switcher {
+  padding: 20px 20px 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+main {
+  height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,10 +32,22 @@ main {
   text-align: center;
 }
 
-.person-desc {
-  margin-bottom: 20px;
+.svg-dark-switch,
+.svg-dark-switch g {
+  fill: white;
 }
 
-.links img {
-  height: 100px;
+.person-desc {
+  margin: -50px 0 20px;
+}
+
+/* light theme */
+.light {
+  background: white;
+  color: black;
+}
+
+.light .svg-dark-switch,
+.light .svg-dark-switch g {
+  fill: black;
 }
