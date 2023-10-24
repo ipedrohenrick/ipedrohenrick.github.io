@@ -6,6 +6,10 @@
   font-family: 'JetBrains Mono', monospace;
 }
 
+a {
+  text-decoration: none;
+}
+
 .content {
   background: black;
   color: white;
