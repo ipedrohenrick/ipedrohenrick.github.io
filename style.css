@@ -25,6 +25,11 @@ header {
 
 .theme-switcher {
   margin: 20px 20px 0 0;
+}
+
+.theme-switcher button {
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
