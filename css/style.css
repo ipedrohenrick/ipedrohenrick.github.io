@@ -8,6 +8,10 @@
   background: black;
 }
 
+body {
+  position: relative;
+}
+
 a {
   text-decoration: none;
 }
@@ -18,7 +22,7 @@ main {
   height: 100vh;
 }
 
-main > div {
+main > div:not(.copyright):not(.to-top) {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -61,6 +65,30 @@ main > div {
 .stack > .technologies img,
 .links a {
   margin: 2px;
+}
+
+.copyright {
+  position: absolute;
+  left: -50px;
+  bottom: 100px;
+  transform: rotate(90deg);
+}
+
+.to-top-hidden {
+  opacity: 0 !important;
+}
+
+.to-top {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.copyright a {
+  text-decoration: underline;
 }
 
 ::-webkit-scrollbar {
